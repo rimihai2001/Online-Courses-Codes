@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class Program
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int amount = scanner.nextInt();
+		
+		for(int i=1; i<=3; i++)
+		{
+			int payment = amount * 10 / 100;
+			amount -= payment;
+		}
+
+		System.out.println(amount);
+		
+
+		
+	}
+}
